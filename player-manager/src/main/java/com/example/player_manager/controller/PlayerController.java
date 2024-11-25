@@ -13,14 +13,14 @@ public class PlayerController {
     public PlayerController(PlayerService playerService) {
         this.playerService = playerService;
     }
-    // créer un joueur 
+    // create player
     @PostMapping
     public ResponseEntity<Player> createPlayer(@RequestBody Player player) {
         Player createdPlayer = playerService.createPlayer(player);
         return ResponseEntity.ok(createdPlayer);
     }
 
-    // Modifier un joueur
+    // update a player
     @PutMapping("/{id}")
     public ResponseEntity<Player> updatePlayer(@PathVariable Long id, @RequestBody PlayerDTO updatePlayerDTO) 
     {
@@ -35,7 +35,7 @@ public class PlayerController {
         return ResponseEntity.ok(playerService.updatePlayer(id, player));
     }
 
-    //Supprimer un joueur
+    // delete a player 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletePlayer(@PathVariable Long id) {
         playerService.deletePlayer(id);

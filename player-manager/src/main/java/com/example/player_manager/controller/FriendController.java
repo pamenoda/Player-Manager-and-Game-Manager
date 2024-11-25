@@ -6,6 +6,7 @@ import com.example.player_manager.service.FriendService;
 
 import java.util.List;
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -26,10 +27,15 @@ public class FriendController {
         return ResponseEntity.ok("Friend added successfully.");
     }
 
-    // get all friends
+    // get all friends of a player 
     @GetMapping
-    public ResponseEntity<List<FriendInfoDTO>> getFriends(@PathVariable Long Id) {
+    public ResponseEntity<?> getFriends(@PathVariable Long Id) {
         List<FriendInfoDTO> friends = friendService.getFriends(Id);
+
+        if (friends.isEmpty()) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND)
+                .body("The player has no friends.");
+        }
         return ResponseEntity.ok(friends);
     }
 
