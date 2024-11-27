@@ -3,6 +3,9 @@ package com.example.player_manager;
 import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.*;
 
+import java.util.Optional;
+
+import com.example.player_manager.dto.PlayerDTO;
 import com.example.player_manager.entity.Player;
 import com.example.player_manager.repository.PlayerRepository;
 import com.example.player_manager.service.PlayerService;
@@ -45,6 +48,26 @@ public class PlayerServiceTest {
         assertEquals(100, createdPlayer.getTotalPoints());
         System.out.println("Test createPlayer passed: " + createdPlayer.getUsername());
 
+    }
+
+    @Test
+    public void testGetPlayerInfo() {
+    // Arrange
+    Player player = new Player();
+    player.setId(1L);
+    player.setUsername("player1");
+    player.setLevel(46);
+    player.setTotalPoints(129);
+
+    when(playerRepository.findById(1L)).thenReturn(Optional.of(player));
+
+    // Act
+    PlayerDTO result = playerService.getPlayerInfo(1L);
+
+    // Assert
+    assertEquals("player1", result.getUsername());
+    assertEquals(46, result.getLevel());
+    assertEquals(129, result.getTotalPoints());
     }
     
 }

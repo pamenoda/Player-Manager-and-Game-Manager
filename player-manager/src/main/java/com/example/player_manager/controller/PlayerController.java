@@ -35,6 +35,14 @@ public class PlayerController {
         return ResponseEntity.ok(playerService.updatePlayer(id, player));
     }
 
+    // get stat of player and info 
+    @GetMapping("/{id}")
+    public ResponseEntity<?> getPlayer(@PathVariable Long id) 
+    {
+        PlayerDTO playerDTO = playerService.getPlayerInfo(id);
+        return ResponseEntity.ok(playerDTO);
+    }
+
     // delete a player 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletePlayer(@PathVariable Long id) {
