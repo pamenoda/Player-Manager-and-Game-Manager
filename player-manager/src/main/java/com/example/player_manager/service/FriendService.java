@@ -1,6 +1,5 @@
 package com.example.player_manager.service;
 import java.util.List;
-import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
@@ -13,7 +12,7 @@ import com.example.player_manager.repository.PlayerRepository;
 import jakarta.transaction.Transactional;
 
 @Service
-public class FriendService {
+public class FriendService implements IFriendService {
 
     private final FriendRepository friendRepository;
     private final PlayerRepository playerRepository;
@@ -26,6 +25,7 @@ public class FriendService {
     }
 
     // add a friend
+    @Override
     public void addFriend(Long playerId, Long friendId) {
         if (playerRepository.existsById(playerId) && playerRepository.existsById(friendId)) {
              // Vérification si la relation existe déjà
@@ -44,13 +44,20 @@ public class FriendService {
     }
 
     // get friends 
+    @Override
     public List<FriendInfoDTO> getFriends(Long playerId) {
         return friendDAO.findFriendsByPlayerId(playerId);
-}
+    }
 
-    @Transactional
     // delete friends 
+    @Override
+    @Transactional
     public void removeFriend(Long playerId, Long friendId) {
-        friendDAO.deleteByPlayerIdAndFriendId(playerId, friendId);
+        if (playerRepository.existsById(friendId) && playerRepository.existsById(playerId)) {
+            friendDAO.deleteByPlayerIdAndFriendId(playerId, friendId);
+        }
+        else{
+            throw new IllegalArgumentException("Invalid player or friend ID.");
+        }
     }
 }

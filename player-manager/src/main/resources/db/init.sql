@@ -1,6 +1,3 @@
--- Create the database
-CREATE DATABASE IF NOT EXISTS player_management;
-
 -- Use the database
 USE player_management;
 
