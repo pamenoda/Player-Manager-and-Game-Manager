@@ -239,7 +239,7 @@ After that **you must set up the application. Properties** file of each module w
 ![Une image contenant texte, capture d��cran, Police
 
 Description g�n�r�e automatiquement](https://github.com/pamenoda/Player-Manager-and-Game-Manager/blob/main/images/image003.png)
-<img src="images/image005.png" alt="Description of the image" width="400">
+<img src="images/image003.png" alt="Description of the image" width="400">
 
 **You have the username and password to change and the url if different**
 
@@ -277,6 +277,7 @@ This is a request Post where we have created a player with a body as response:
 ![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
 
 Description g�n�r�e automatiquement](./images/image005.png)
+<img src="images/image005.png" alt="Description of the image" width="400">
 
 #### � [Retrieve a Player](#retrieve-a-player) :
 
@@ -285,6 +286,7 @@ Here we don�t need body only we have put the id of the player in the path dire
 ![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image006.png)
+<img src="images/image006.png" alt="Description of the image" width="400">
 
 #### � [Update Player Stats](#update-player-stats) :
 
@@ -293,6 +295,7 @@ Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manag
 ![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image007.png)
+<img src="images/image007.png" alt="Description of the image" width="400">
 
 ### 2. [Manage Friendships](#manage-friendships) :
 
@@ -303,6 +306,7 @@ Post request with a body of the id of player and the id of friend:
 ![Une image contenant texte, capture d��cran, logiciel, Police
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image009.png)
+<img src="images/image009.png" alt="Description of the image" width="400">
 
 #### � Remove friend:
 
@@ -311,6 +315,8 @@ We have removed the friend with the id 4 from the list of friends of the player 
 ![Une image contenant texte, capture d��cran, logiciel
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image010.png)
+<img src="images/image010.png" alt="Description of the image" width="400">
+
 
 #### � Get friends:
 
@@ -319,6 +325,7 @@ Get request without body to fetch the list of friends with username, level, tota
 ![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image012.png)
+<img src="images/image012.png" alt="Description of the image" width="400">
 
 ### 3. [Game Management](#game-management) :
 
@@ -329,6 +336,7 @@ We can create a game with a Postman request like this:
 ![Une image contenant texte, capture d��cran, logiciel, Police
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image014.png)
+<img src="images/image014.png" alt="Description of the image" width="400">
 
 **Expected Constraints:**
 
@@ -343,6 +351,7 @@ To get a game, we have only to put the id on the url like this without body:
 ![Une image contenant texte, capture d��cran, logiciel, Police
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image016.png)
+<img src="images/image016.png" alt="Description of the image" width="400">
 
 **It sends us all information�s about the game�**
 
@@ -353,6 +362,7 @@ This is the request for delete game same url but just change the type of request
 ![Une image contenant texte, capture d��cran, Police, logiciel
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image018.png)
+<img src="images/image018.png" alt="Description of the image" width="400">
 
 ### 4. [Participation Management](#participation-management)
 
@@ -363,6 +373,7 @@ This is the request to register a participant to the game with the id in the url
 ![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image020.png)
+<img src="images/image020.png" alt="Description of the image" width="400">
 
 **Expected Constraints:**
 
@@ -375,6 +386,8 @@ You add the participation id to retrieve the information about the participation
 ![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image021.png)
+<img src="images/image021.png" alt="Description of the image" width="400">
+
 
 Testing Guide:
 --------------
@@ -396,6 +409,8 @@ Example:
 ![Une image contenant texte, capture d��cran, logiciel, Police
 
 Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image023.png)
+<img src="images/image023.png" alt="Description of the image" width="400">
+
 
 **Purpose**: The method name describes what is being tested: that the getGameById method should successfully return a game when it exists in the database.
 
