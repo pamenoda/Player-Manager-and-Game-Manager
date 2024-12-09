@@ -12,47 +12,47 @@ Table of contents
 
 [Overview.. 2](#_Toc184642808)
 
-[1.������� Purpose of the Application :  2](#_Toc184642809)
+[1.Purpose of the Application :  2](#_Toc184642809)
 
-[2.������� Key Features :  2](#_Toc184642810)
+[2.Key Features :  2](#_Toc184642810)
 
 [Design Choices. 2](#_Toc184642811)
 
-[1.������� Why Spring Boot and MySQL:  2](#_Toc184642812)
+[1.Why Spring Boot and MySQL:  2](#_Toc184642812)
 
-[2.������� RESTful API Benefits :  2](#_Toc184642813)
+[2.RESTful API Benefits :  2](#_Toc184642813)
 
-[3.������� Testing with JUnit and Mockito :  2](#_Toc184642814)
+[3.Testing with JUnit and Mockito :  2](#_Toc184642814)
 
 [Technical Details. 2](#_Toc184642815)
 
-[1.������� Technologies Used. 2](#_Toc184642816)
+[1.Technologies Used. 2](#_Toc184642816)
 
-[2.������� Architecture. 3](#_Toc184642817)
+[2.Architecture. 3](#_Toc184642817)
 
-[3.������� Key Components. 4](#_Toc184642818)
+[3.Key Components. 4](#_Toc184642818)
 
 [Installation Guide. 5](#_Toc184642819)
 
-[1.������� Pre-Requisites :  5](#_Toc184642820)
+[1Pre-Requisites :  5](#_Toc184642820)
 
-[2.������� Setup Steps :  5](#_Toc184642821)
+[2.Setup Steps :  5](#_Toc184642821)
 
 [Usage Guide. 6](#_Toc184642822)
 
-[1.������� Player Management :  6](#_Toc184642823)
+[1.Player Management :  6](#_Toc184642823)
 
-[2.������� Manage Friendships :  8](#_Toc184642824)
+[2.Manage Friendships :  8](#_Toc184642824)
 
-[3.������� Game Management :  9](#_Toc184642825)
+[3.Game Management :  9](#_Toc184642825)
 
-[4.������� Participation Management. 11](#_Toc184642826)
+[4.Participation Management. 11](#_Toc184642826)
 
 [Testing Guide. 12](#_Toc184642827)
 
-[1.������� Run All Tests :  12](#_Toc184642828)
+[1.Run All Tests :  12](#_Toc184642828)
 
-[2.������� Mocked Tests :  12](#_Toc184642829)
+[2.Mocked Tests :  12](#_Toc184642829)
 
   
 
