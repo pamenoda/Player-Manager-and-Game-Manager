@@ -236,9 +236,6 @@ This project consists of **two modules**: Player Manager and Game Manager. Each 
 
 After that **you must set up the application. Properties** file of each module with similar options:
 
-![Une image contenant texte, capture d��cran, Police
-
-Description g�n�r�e automatiquement](https://github.com/pamenoda/Player-Manager-and-Game-Manager/blob/main/images/image003.png)
 <img src="images/image003.png" alt="Description of the image" width="400">
 
 **You have the username and password to change and the url if different**
@@ -274,27 +271,18 @@ use a tools like �PostMan� for test request!
 
 This is a request Post where we have created a player with a body as response:
 
-![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
-
-Description g�n�r�e automatiquement](./images/image005.png)
 <img src="images/image005.png" alt="Description of the image" width="400">
 
 #### � [Retrieve a Player](#retrieve-a-player) :
 
 Here we don�t need body only we have put the id of the player in the path directly:
 
-![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image006.png)
 <img src="images/image006.png" alt="Description of the image" width="400">
 
 #### � [Update Player Stats](#update-player-stats) :
 
 �There, we have inserted the score to add in the body of the request Post:
 
-![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image007.png)
 <img src="images/image007.png" alt="Description of the image" width="400">
 
 ### 2. [Manage Friendships](#manage-friendships) :
@@ -303,18 +291,12 @@ Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manag
 
 Post request with a body of the id of player and the id of friend:
 
-![Une image contenant texte, capture d��cran, logiciel, Police
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image009.png)
 <img src="images/image009.png" alt="Description of the image" width="400">
 
 #### � Remove friend:
 
 We have removed the friend with the id 4 from the list of friends of the player with id 1:
 
-![Une image contenant texte, capture d��cran, logiciel
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image010.png)
 <img src="images/image010.png" alt="Description of the image" width="400">
 
 
@@ -322,9 +304,6 @@ Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manag
 
 Get request without body to fetch the list of friends with username, level, total Points:
 
-![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image012.png)
 <img src="images/image012.png" alt="Description of the image" width="400">
 
 ### 3. [Game Management](#game-management) :
@@ -333,9 +312,6 @@ Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manag
 
 We can create a game with a Postman request like this:
 
-![Une image contenant texte, capture d��cran, logiciel, Police
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image014.png)
 <img src="images/image014.png" alt="Description of the image" width="400">
 
 **Expected Constraints:**
@@ -348,9 +324,6 @@ Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manag
 
 To get a game, we have only to put the id on the url like this without body:
 
-![Une image contenant texte, capture d��cran, logiciel, Police
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image016.png)
 <img src="images/image016.png" alt="Description of the image" width="400">
 
 **It sends us all information�s about the game�**
@@ -359,9 +332,6 @@ Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manag
 
 This is the request for delete game same url but just change the type of request instead of getting we have deleting:
 
-![Une image contenant texte, capture d��cran, Police, logiciel
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image018.png)
 <img src="images/image018.png" alt="Description of the image" width="400">
 
 ### 4. [Participation Management](#participation-management)
@@ -370,9 +340,6 @@ Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manag
 
 This is the request to register a participant to the game with the id in the url of the request:
 
-![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image020.png)
 <img src="images/image020.png" alt="Description of the image" width="400">
 
 **Expected Constraints:**
@@ -383,9 +350,6 @@ Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manag
 
 You add the participation id to retrieve the information about the participation of a player and his score:
 
-![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image021.png)
 <img src="images/image021.png" alt="Description of the image" width="400">
 
 
@@ -406,11 +370,7 @@ Mocked tests are a testing technique used in unit testing to isolate the code be
 
 Example:
 
-![Une image contenant texte, capture d��cran, logiciel, Police
-
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image023.png)
 <img src="images/image023.png" alt="Description of the image" width="400">
-
 
 **Purpose**: The method name describes what is being tested: that the getGameById method should successfully return a game when it exists in the database.
 
