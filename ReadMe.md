@@ -238,7 +238,7 @@ After that **you must set up the application. Properties** file of each module w
 
 ![Une image contenant texte, capture d��cran, Police
 
-Description g�n�r�e automatiquement](Player%20Manager%20and%20Game%20Manager%20Application_fichiers/image003.png)
+Description g�n�r�e automatiquement](https://github.com/pamenoda/Player-Manager-and-Game-Manager/blob/main/images/image003.png)
 
 **You have the username and password to change and the url if different**
 
