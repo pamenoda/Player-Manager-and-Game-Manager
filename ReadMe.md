@@ -275,7 +275,7 @@ This is a request Post where we have created a player with a body as response:
 
 ![Une image contenant texte, capture d��cran, logiciel, Logiciel multim�dia
 
-Description g�n�r�e automatiquement](images/image005.png)
+Description g�n�r�e automatiquement](./images/image005.png)
 
 #### � [Retrieve a Player](#retrieve-a-player) :
 
