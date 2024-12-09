@@ -67,38 +67,38 @@ The Player Manager and Game Manager application is a robust solution for managin
 
 You can find every feature that I have implemented below:
 
-� Player registration, profile updates, and level management.
+- Player registration, profile updates, and level management.
 
-� Friendship creation and retrieval.
+-  Friendship creation and retrieval.
 
-� Game management, including creating, updating, and deleting games.
+-  Game management, including creating, updating, and deleting games.
 
-� Participation tracking for games.
+-  Participation tracking for games.
 
-� **RESTful API** architecture for ease of integration.
+-  **RESTful API** architecture for ease of integration.
 
 Design Choices:
 ---------------
 
 ### 1. [Why Spring Boot and MySQL](#why-spring-boot-and-mysql):
 
-� **Spring Boot**: Offers rapid development with built-in configurations, dependency injection, and seamless REST API support.
+-  **Spring Boot**: Offers rapid development with built-in configurations, dependency injection, and seamless REST API support.
 
-� **MySQL**: Reliable and robust for structured data with excellent performance for relational queries.
+-  **MySQL**: Reliable and robust for structured data with excellent performance for relational queries.
 
 ### 2. [RESTful API Benefits](#restful-api-benefits) :
 
-� Standardized communication format.
+-  Standardized communication format.
 
-� Easy integration with frontend and third-party applications.
+-  Easy integration with frontend and third-party applications.
 
-� Scalable and maintainable architecture.
+-  Scalable and maintainable architecture.
 
 ### 3. [Testing with JUnit and Mockito](#testing-with-junit-and-mockito) :
 
-� Unit tests ensure code reliability.
+-  Unit tests ensure code reliability.
 
-� Mockito simplifies mocking dependencies to isolate test scenarios.
+-  Mockito simplifies mocking dependencies to isolate test scenarios.
 
 Technical Details:
 ------------------
@@ -107,17 +107,17 @@ Technical Details:
 
 This is the technologies that I have used during my project:
 
-� Backend Framework: Java Spring Boot
+-  Backend Framework: Java Spring Boot
 
-� Database: MySQL
+-  Database: MySQL
 
-� Build Tool: Maven
+-  Build Tool: Maven
 
-� Testing: JUnit and Mockito
+-  Testing: JUnit and Mockito
 
-� API Framework: REST
+-  API Framework: REST
 
-� Others: Lombok, Spring Data JPA
+-  Others: Lombok, Spring Data JPA
 
 ### 2. [Architecture](#architecture)
 
