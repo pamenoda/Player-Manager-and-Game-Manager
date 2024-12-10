@@ -8,51 +8,28 @@ Java V
 Table of contents
 -----------------
 
-[Table of contents.](#_Toc184642807)
-
-[Overview.. ](#_Toc184642808)
-
-[   1.Purpose of the Application :](#_Toc184642809)
-
-[   2.Key Features : ](#_Toc184642810)
-
-[Design Choices. ](#_Toc184642811)
-
-[   1.Why Spring Boot and MySQL:  ](#_Toc184642812)
-
-[   2.RESTful API Benefits :  ](#_Toc184642813)
-
-[   3.Testing with JUnit and Mockito :  ](#_Toc184642814)
-
-[Technical Details. ](#_Toc184642815)
-
-[   1.Technologies Used. ](#_Toc184642816)
-
-[   2.Architecture. ](#_Toc184642817)
-
-[   3.Key Components. ](#_Toc184642818)
-
-[Installation Guide. ](#_Toc184642819)
-
-[   1.Pre-Requisites :  ](#_Toc184642820)
-
-[   2.Setup Steps :  ](#_Toc184642821)
-
-[Usage Guide. ](#_Toc184642822)
-
-[   1.Player Management :  ](#_Toc184642823)
-
-[   2.Manage Friendships :  ](#_Toc184642824)
-
-[   3.Game Management :  ](#_Toc184642825)
-
-[   4.Participation Management. ](#_Toc184642826)
-
-[Testing Guide. ](#_Toc184642827)
-
-[   1.Run All Tests :  ](#_Toc184642828)
-
-[   2.Mocked Tests :  ](#_Toc184642829)
+1. [Overview](#overview)
+   - [Purpose of the Application](#purpose-of-the-application)
+   - [Key Features](#key-features)
+2. [Design Choices](#design-choices)
+   - [Why Spring Boot and MySQL](#why-spring-boot-and-mysql)
+   - [RESTful API Benefits](#restful-api-benefits)
+   - [Testing with JUnit and Mockito](#testing-with-junit-and-mockito)
+3. [Technical Details](#technical-details)
+   - [Technologies Used](#technologies-used)
+   - [Architecture](#architecture)
+   - [Key Components](#key-components)
+4. [Installation Guide](#installation-guide)
+   - [Pre-Requisites](#pre-requisites)
+   - [Setup Steps](#setup-steps)
+5. [Usage Guide](#usage-guide)
+   - [Player Management](#player-management)
+   - [Manage Friendships](#manage-friendships)
+   - [Game Management](#game-management)
+   - [Participation Management](#participation-management)
+6. [Testing Guide](#testing-guide)
+   - [Run All Tests](#run-all-tests)
+   - [Mocked Tests](#mocked-tests)
 
   
 
