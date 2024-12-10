@@ -161,6 +161,8 @@ There is all the table of mySQL Database:
 
 <img src="images/dbSchema.png" alt="Description of the image" width="800" height="600">
 
+This diagram represents the structure of a Player and Game Management System. It includes four main entities: Player, Friend, Game, and Participation, and shows how they are connected to each other.
+
 #### � [REST API Endpoints](#rest-api-endpoints)
 
 * **Player Management**
