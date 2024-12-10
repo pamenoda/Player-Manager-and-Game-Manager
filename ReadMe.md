@@ -36,7 +36,7 @@ Table of contents
 Overview:
 ---------
 
-Purpose of the application
+#Purpose of the application
 ### 1. [Purpose of the application](#purpose-of-the-application) :
 
 The Player Manager and Game Manager application is a robust solution for managing players, games, and their participation. It is built with Spring Boot for backend logic and MySQL for database persistence. The project includes REST APIs to handle player management, friendships, games, and participation records.
