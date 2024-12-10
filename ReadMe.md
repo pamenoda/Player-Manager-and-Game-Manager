@@ -159,7 +159,7 @@ There is all the table of mySQL Database:
 
 4. Participation: id, game\_id, player\_id, score, win
 
-<img src="images/dbSchema.png" alt="Description of the image" width="400">
+<img src="images/dbSchema.png" alt="Description of the image" width="600" height="600">
 
 #### � [REST API Endpoints](#rest-api-endpoints)
 
