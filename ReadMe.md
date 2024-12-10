@@ -56,7 +56,6 @@ You can find every feature that I have implemented below:
 
 Design Choices:
 ---------------
-#design-choices
 ### 1. [Why Spring Boot and MySQL](#why-spring-boot-and-mysql):
 
 -  **Spring Boot**: Offers rapid development with built-in configurations, dependency injection, and seamless REST API support.
