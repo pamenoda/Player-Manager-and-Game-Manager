@@ -16,18 +16,19 @@ Table of contents
    - [RESTful API Benefits](#restful-api-benefits)
    - [Testing with JUnit and Mockito](#testing-with-junit-and-mockito)
 3. [Technical Details](#technical-details)
+   - [Business Logic Explanation](#business-logic)
    - [Technologies Used](#technologies-used)
    - [Architecture](#architecture)
    - [Key Components](#key-components)
-4. [Installation Guide](#installation-guide)
+5. [Installation Guide](#installation-guide)
    - [Pre-Requisites](#pre-requisites)
    - [Setup Steps](#setup-steps)
-5. [Usage Guide](#usage-guide)
+6. [Usage Guide](#usage-guide)
    - [Player Management](#player-management)
    - [Manage Friendships](#manage-friendships)
    - [Game Management](#game-management)
    - [Participation Management](#participation-management)
-6. [Testing Guide](#testing-guide)
+7. [Testing Guide](#testing-guide)
    - [Run All Tests](#run-all-tests)
    - [Mocked Tests](#mocked-tests)
 
@@ -78,6 +79,43 @@ Design Choices:
 
 Technical Details:
 ------------------
+
+### 1.[Business Logic Explanation](#business-logic):
+This section explains the business logic implemented in the application for each module.
+  
+ Player Management:
+  
+  1. Creating a Player:
+   - When a new player is created, the application ensures that the username is unique.
+   - If a player with the same username already exists, the system returns an error (400 Bad Request).
+   - Default statistics (level and totalPoints) are initialized to zero.
+     
+  2. Updating Player Statistics:
+   - When updating a player's statistics, the provided points are added to the existing totalPoints.
+   - This ensures that the player’s progress is accurately tracked and reflected in the database.
+     
+ Game Management:
+  
+  1.Creating a Game:
+   - When creating a game, the following validations are performed:
+   - The gameType must be a valid value from the GameType enum (e.g., SINGLE_PLAYER, MULTIPLAYER, TOURNAMENT).
+   - The hostId must correspond to an existing player in the Player database.
+   - If any validation fails, the system returns a 400 Bad Request error.
+    
+  2.Managing Games:
+   - Each game is identified by a unique ID and can be retrieved or deleted using its ID.
+   - The game creation process ensures that only valid data is saved in the database.
+
+  Participation Management:
+  
+   1.Registering Participation:
+    - A player can register for a game only if:
+    - The player exists in the database.
+    - The player has not already registered for the same game.
+    
+   2.Updating Statistics:
+    - During the registration process, the player's statistics are updated based on their score in the game.
+    - This ensures the player's overall performance is accurately reflected.
 
 ### 1. [Technologies Used](#technologies-used)
 
