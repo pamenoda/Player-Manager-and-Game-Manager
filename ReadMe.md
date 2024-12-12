@@ -1,6 +1,7 @@
  
 
 Player Manager and Game Manager Application Documentation 
+
 Author : Drimis Alexandros
 Java V
 
