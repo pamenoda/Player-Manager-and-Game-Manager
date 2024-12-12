@@ -13,7 +13,6 @@ import lombok.Setter;
 @NoArgsConstructor
 public class UpdateGameDTO {
     
-   
     private GameType gameType;
     private int maxScore;
 }

@@ -7,7 +7,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 
 @Configuration
 public class WebClientConfig {
-
+// configure to use directly in each class needed 
     @Value("${player.manager.api.url}")
     private String playerManagerApiUrl;
 

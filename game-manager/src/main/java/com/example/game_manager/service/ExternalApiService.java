@@ -36,11 +36,13 @@ public class ExternalApiService implements IExternalApiService {
 
     @Override
     public void updatePlayerStats(Long playerId, int scoreToAdd) {
-        // Créer un payload JSON contenant uniquement les informations nécessaires
+       
+        // create a body 
         Map<String, Object> updatePayload = new HashMap<>();
         updatePayload.put("scoreToAdd", scoreToAdd);
     
-        // Appeler directement l'endpoint de mise à jour des statistiques
+
+        // send body by post with the endpoint of player management
         webClient.post()
                 .uri("/players/" + playerId + "/update-stats")
                 .bodyValue(updatePayload)
